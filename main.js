@@ -87,7 +87,7 @@ searchToggle.addEventListener('click', onSearchTogglePress);
 
 searchForm.addEventListener('submit',function(e) {
   e.preventDefault();
-  browser.findAll(searchBar.value, 'case-sensitive');
+  browser.findAll(searchBar.value, 'case-insensitive');
   searchActive = true;
   prev.disabled = false;
   next.disabled = false;
